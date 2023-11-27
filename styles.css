@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+ --yellow: rgb(211, 224, 21);
+ --hover-yellow: rgb(187, 198, 29);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(18, 20, 65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+    overflow-y: hidden;
+}
+
+.screen {
+    height: 90vh;
+    width:  50vw;
+    min-width: 640px;
+    background-color: rgba(0, 221, 255, 0.774);
+    border: 5px solid rgb(0, 221, 255);
+    border-radius: 25px;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    color: var(--yellow);
+    text-shadow: 2px 2px 2px red;
+    font-size: 2.8rem;
+}
+
+.event-area {
+    flex: 1 1 90%;  
+    /* background-color: rgba(0, 221, 255, 0.276); */
+    padding: 4rem 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    color: var(--yellow);
+    text-shadow: 2px 2px 2px red;
+}
+
+.user-input {
+    height: 5rem;
+    background-color: rgba(0, 221, 255, 0.276);
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    outline: none;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    color: var(--yellow);
+    text-shadow: 2px 2px 2px red;
+}
+
+.user-input::placeholder {
+    color: var(--yellow);
+    font-size: 1.5rem;
+}
+
+.user-submit {
+    height: 3rem;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0 red;
+    color: rgb(18, 20, 65);
+    font-size: 1rem;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+}
+
+.subheader {
+    text-align: center;
+    color: var(--yellow);
+    text-shadow: 2px 2px 2px red;
+    font-size: 1rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.admin-power {
+    padding: 1.5rem;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0 red;
+    font-size: 0.8rem;
+}
+
+.admin-power:hover, .cardInsert:hover, .user-submit:hover {
+    background-color: var(--hover-yellow);
+}
+
+.info {
+    padding: 0.4rem;
+}
+
+.logout {
+    background-color: var(--yellow);
+    color: rgb(18, 20, 65);
+    width: 30%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 2px 2px 2px 0 red;
+}
+
+.logout:hover, .log:hover, .cardAction:hover {
+    background-color: red;
+    color: var(--yellow);
+    box-shadow: 2px 2px 2px 0 var(--yellow);
+}
